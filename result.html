@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends 'tempapp/base.html'%}
+
+    {%block body_block %}
+
+    <h1>ADD ITEM FORM </h1>
+
+    <form method="post">
+
+      {{form.as_p}}
+      {%csrf_token%}
+
+      <input type="submit" name="btn btn-primary  btn-large" value=" Add Item"><br><br>
+
+    </form>
+
+    <a class = "btn btn-primary" href = "/display" role = "button"> DISPLAY ITEMS</a>
+
+  {%endblock%}
